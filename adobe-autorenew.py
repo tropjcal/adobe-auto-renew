@@ -1,4 +1,6 @@
-# Auto renew the Adobe InDesign trial number. 
+# Script to renew the Adobe InDesign trial number.
+# Automation can be carried out on OS level.
+
 import re
 
 f = open("C:\Program Files\Adobe\Adobe InDesign 2021\AMT\\application.xml", "r")
@@ -19,4 +21,5 @@ f_lines[5] += (str(new_tsn) + "</Data></Other>\n") # Replace with new tsn
 fw = open("C:\Program Files\Adobe\Adobe InDesign 2021\AMT\\application.xml", "w")
 for l in f_lines:
     fw.write(l)
+    
 fw.close()
