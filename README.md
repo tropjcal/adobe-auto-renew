@@ -1,4 +1,4 @@
-# adobe-auto-renew
+# [OUTDATED] Adobe Auto-renew Python Script
 
 Very simple script to renew the trial serial number of an Adobe product.
 
